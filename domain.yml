@@ -1,0 +1,87 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - deductions
+  - covered_services
+  - Sepcific_services
+  - pocket_limit
+  - out_of_pocket_limit
+  - network_provider
+
+
+responses:
+  utter_greet:
+  - text: |
+      - Hello, my friend.
+      - I'm your virtual Assistant.
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye👋,Thankyou😊." 
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+
+
+#######################
+
+
+  utter_greeting_card:
+  - buttons:
+    - payload: What is the overall deductible?
+      title: Deductiable
+    - payload: covered services 
+      title: Covered Services 
+    - payload: specific services 
+      title: Specific Services
+    - payload: What is the out-of-pocket limit for this plan?
+      title: Pocket Limit
+    - payload: What is not included in pocket limit?
+      title: Out of Pocket Limit
+    - payload: network provider
+      title: Network Provider
+    text: You can simply click on one of these
+
+  utter_deductions: 
+  - text: "In-Network: Not Applicable. Out-of-Network: $500 Per Person/$1,000 Family."
+
+  utter_covered_services: 
+  - text: "Yes, Preventive care!!"
+
+  utter_Sepcific_services: 
+  - text: "Yes. $3,000 Pharmacy Deductible. There are no other specific deductibles."
+
+  utter_pocket_limit: 
+  - text: "In-Network: $9,100 Per Person/$18,200 Family. Out-Of-Network: $18,200 Per Person/$36,400 Family."
+
+  utter_out_of_pocket_limit: 
+  - text: "Premium, balance-billed charges, and health care this plan doesn't cover."
+
+  utter_network_provider: 
+  - text: "Yes. Click here - https://providersearch.floridablue.com/providersearch/pub/index.htm or call 1-800-352-2583 for a list of network providers"
+
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,25 @@
+version: '3'
+services:
+    rasa:
+      container_name: "rasa_server"
+      user: root
+      build: 
+        context:  .
+        dockerfile: ./Dockerfile
+      volumes:
+      - "./:/app"
+      ports: 
+        - "5005:5005"
+    action_server:
+      container_name: "action_server"
+      build: 
+        context: ./actions
+        dockerfile: ./Dockerfile
+      volumes:
+        - ./actions:/app/actions
+        - ./data:/app/data
+      ports:
+        - 5055:5055
+
+
+

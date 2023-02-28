@@ -1,0 +1,179 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+########################################################
+
+
+- intent: deductions
+  examples: |
+    - What is the overall deductible?
+    - how much deduction would be there?
+    - how deduction?
+    - What amount would be deducted?
+    - What would be overall deductible?
+    - Deduction
+    - deduction
+    - Deductiable
+    - deductiable
+    - Deducted
+    - deducted
+
+- intent: covered_services
+  examples: |
+    - Are there services covered before you meet your deductible?
+    - Covered Services
+    - covered services
+    - Services Covered
+    - services covered
+    - service cover
+    - Service Cover
+    # - Deductiable
+    # - deductiable
+    # - Deducted
+    # - deducted
+
+- intent: Sepcific_services
+  examples: |
+    - Is there other deduction for specific services?
+    - Specific Services
+    - specific services
+    - other deductiables
+    - Other Deductiables
+    - Specific Service
+    - specific service
+
+- intent: pocket_limit
+  examples: |
+    - What is the out-of-pocket limit for this plan?
+    - out-of-pocket
+    - Included
+    - included
+    - inclusion
+    - Inclusion
+    - Out-of-Pocket
+    - Pocket Limit
+    - pocket limit
+    - What is included in out-of-pocket limit for this plan?
+    - out of pocket limit inclusion
+  
+- intent: out_of_pocket_limit
+  examples: |
+    - What is not included in pocket limit?
+    - exclusion
+    - Excluded
+    - not included
+    - What not comes in out of pocket?
+    - What is exluded in out-of-pocket limit?
+    - out of pocket limit exclusion
+
+- intent: network_provider
+  examples: |
+    - Will you pay less if you use a network provider?
+    - If we use network provider should we pay less
+    - network provider
+    - Network Provider
+    - What is network provider?
+    - What is Network Provider?
+    # - out of pocket limit exclusion
+
+- intent: referral
+  examples: |
+    - Do you need a referral to see a specialist?
+    - do you need a referral?
+    - referral a specialist?
+    - referral
+    - specilist referral
+    - refer a specialist
+    - Referral
+
+
+

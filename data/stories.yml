@@ -1,0 +1,79 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+#########################################################
+
+
+
+- story: good bye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: deductiables
+  steps:
+  - intent: deductions
+  - action: utter_deductions
+  - action: utter_greeting_card
+
+- story: covered services
+  steps:
+  - intent: covered_services
+  - action: utter_covered_services
+  - action: utter_greeting_card
+
+- story: specific services
+  steps:
+  - intent: Sepcific_services
+  - action: utter_Sepcific_services
+  - action: utter_greeting_card
+
+- story: pocket limit
+  steps:
+  - intent: pocket_limit
+  - action: utter_pocket_limit
+  - action: utter_greeting_card
+
+- story: out of pocket limit
+  steps:
+  - intent: out_of_pocket_limit
+  - action: utter_out_of_pocket_limit
+  - action: utter_greeting_card
+
+- story: network provider 
+  steps:
+  - intent: network_provider
+  - action: utter_network_provider
+  - action: utter_greeting_card
+
+
+
+
